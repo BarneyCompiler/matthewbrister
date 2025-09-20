@@ -141,7 +141,6 @@
             border-bottom-color: #666;
         }
 
-        /* Unique feature - the devotion meter */
         .devotion-section {
             background: #0d0d0d;
             border: 1px solid #1f1f1f;
@@ -179,7 +178,6 @@
             font-size: 12px;
         }
 
-        /* Philosophy section */
         .philosophy {
             background: #080808;
             border-left: 3px solid #333;
@@ -193,7 +191,6 @@
             text-align: center;
         }
 
-        /* Code block styling */
         .code-sample {
             background: #0c0c0c;
             border: 1px solid #1a1a1a;
@@ -215,7 +212,6 @@
             color: #a0a0a0;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .container {
                 padding: 40px 20px;
@@ -234,7 +230,6 @@
             }
         }
 
-        /* Minimal scroll indicator */
         .scroll-progress {
             position: fixed;
             top: 0;
@@ -245,7 +240,6 @@
             z-index: 100;
         }
 
-        /* Focus states */
         .skill-item:hover,
         .project-item:hover,
         .commitment-item:hover {
@@ -259,7 +253,7 @@
     <div class="container">
         <header class="header">
             <h1 class="name">matthew brister</h1>
-            <p class="subtitle">programmer focused on scalable, modular systems</p>
+            <p class="subtitle">programmer</p>
         </header>
 
         <section class="section">
@@ -394,14 +388,11 @@
     </div>
 
     <script>
-        // Minimal scroll progress indicator
         window.addEventListener('scroll', () => {
             const scrollProgress = document.querySelector('.scroll-progress');
             const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
             scrollProgress.style.width = scrollPercent + '%';
         });
-
-        // Simple hover effects for commitment items
         document.querySelectorAll('.commitment-item').forEach(item => {
             item.addEventListener('mouseenter', () => {
                 item.style.background = '#111';
